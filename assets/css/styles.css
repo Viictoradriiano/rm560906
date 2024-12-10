@@ -1,0 +1,121 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #c3c3c3, #797979);
+  }
+  
+  /* Contêiner Principal */
+  .principal {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 450px;
+    height: auto;
+  }
+  
+  /* Texto Principal */
+  .texto1 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-top:250px;
+  }
+  
+  /* Imagem Central */
+  .moeda img {
+    width: 150px;
+    height: auto;
+    margin: 200px;
+  }
+  
+  /* Texto Menor */
+  .texto_menor h3 {
+    font-size:25px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Botões */
+  .button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    width: 180px;
+    height: 65px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  /* Botão Login */
+  .button_login {
+    background-color: #34c759;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button_login:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+  .button_criar:hover{
+    background-color: black;
+    color: #fff;
+  }
+ 
+
+/* Estilos Responsivos para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .logo{
+        width: 400px;
+        height: auto;
+        padding: 50px;
+    }
+    
+    
+    .texto1 h1 {
+      font-size: 30px; 
+      margin-top: 100px; 
+      padding: 10px;
+    }
+  
+    /* Ajustando a imagem da moeda */
+    .moeda img {
+      width: 220px; 
+      margin: 10px;
+      padding: 65px;
+    }
+  
+    /* Ajustando o tamanho do texto menor */
+    .texto_menor h3 {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  
+    /* Ajustando os botões para telas pequenas */
+    .button {
+      gap: 13px; 
+      margin-bottom: -35px;
+    }
+  
+    button {
+      width: 150px; 
+      height: 60px; 
+      font-size: 18px; 
+    }
+  }
